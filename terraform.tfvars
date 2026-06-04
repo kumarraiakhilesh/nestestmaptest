@@ -12,7 +12,7 @@ storage1 = {
     account_tier             = "Standard"
     account_replication_type = "LRS"
   }
-  stg3= {
+  stg3 = {
     name                     = "stgakhilesh3"
     location                 = "centralindia"
     resource_group_name      = "rg_akhilesh1"

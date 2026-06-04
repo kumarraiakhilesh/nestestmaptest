@@ -12,8 +12,7 @@ resource "azurerm_storage_account" "akhilesh_storage" {
   account_replication_type = each.value.account_replication_type
   account_tier             = each.value.account_tier
 }
-
-resource "azurerm_virtual_network" "akhilesh_vm" {
+resource "azurerm_virtual_network" "akhilesh_vnet" {
   for_each            = var.vnet
   name                = each.value.name
   location            = each.value.location
