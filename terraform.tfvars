@@ -3,6 +3,11 @@ recource1 = {
     name     = "rg_akhilesh1"
     location = "westus"
   }
+  rg3 = {
+    name     = "rg_akhilesh3"
+    location = "westus"
+  }
+
 }
 storage1 = {
   stg1 = {
@@ -13,7 +18,7 @@ storage1 = {
     account_replication_type = "LRS"
   }
   stg3 = {
-    name                     = "stgakhilesh3"
+    name                     = "stgakhilesh2"
     location                 = "centralindia"
     resource_group_name      = "rg_akhilesh1"
     account_tier             = "Standard"
@@ -28,15 +33,15 @@ vnet = {
     address_space       = ["10.0.0.0/16"]
     subnet = {
       sub1 = {
-        name             = "frontend"
+        name             = "frontend1"
         address_prefixes = ["10.0.1.0/24"]
       }
       sub2 = {
-        name             = "backend"
+        name             = "backend1"
         address_prefixes = ["10.0.2.0/24"]
       }
       sub3 = {
-        name             = "database"
+        name             = "database1"
         address_prefixes = ["10.0.3.0/24"]
       }
 
